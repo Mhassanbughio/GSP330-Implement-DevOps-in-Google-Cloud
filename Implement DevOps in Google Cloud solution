@@ -73,6 +73,7 @@ kubectl get service gceme-frontend -n production
 git merge canary
 git push origin master
 export FRONTEND_SERVICE_IP=$(kubectl get -o \
+jsonpath="{.status.loadBalancer.ingress[0].ip}" --namespace=production services gceme-frontend)
 
 
 
