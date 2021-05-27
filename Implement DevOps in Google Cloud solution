@@ -61,4 +61,7 @@ git checkout -b canary
 git push origin canary
 export FRONTEND_SERVICE_IP=$(kubectl get -o \
 jsonpath="{.status.loadBalancer.ingress[0].ip}" --namespace=production services gceme-frontend)
+git checkout master
+
+
 
