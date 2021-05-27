@@ -51,3 +51,4 @@ Now save your work.
 
 git checkout -b new-feature
 
+git add Jenkinsfile html.go main.go
