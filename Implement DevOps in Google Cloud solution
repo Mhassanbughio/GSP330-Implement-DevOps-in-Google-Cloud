@@ -59,3 +59,6 @@ curl http://localhost:8001/api/v1/namespaces/new-feature/services/gceme-frontend
 kubectl get service gceme-frontend -n production
 git checkout -b canary
 git push origin canary
+export FRONTEND_SERVICE_IP=$(kubectl get -o \
+jsonpath="{.status.loadBalancer.ingress[0].ip}" --namespace=production services gceme-frontend)
+
