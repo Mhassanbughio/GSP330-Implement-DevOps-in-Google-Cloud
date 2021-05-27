@@ -66,11 +66,7 @@ git push origin master
 
 export FRONTEND_SERVICE_IP=$(kubectl get -o \
 jsonpath="{.status.loadBalancer.ingress[0].ip}" --namespace=production services gceme-frontend)
-
-
-
-
-
+while true; do curl http://$FRONTEND_SERVICE_IP/version; sleep 1; done
 
 
 
