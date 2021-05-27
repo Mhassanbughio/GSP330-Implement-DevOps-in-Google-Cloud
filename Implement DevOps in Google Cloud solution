@@ -49,4 +49,5 @@ git push origin master
 
 Now save your work.
 
+git checkout -b new-feature
 
