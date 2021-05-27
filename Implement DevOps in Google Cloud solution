@@ -4,3 +4,6 @@ git clone https://source.developers.google.com/p/$DEVSHELL_PROJECT_ID/r/sample-a
 
 gcloud container clusters get-credentials jenkins-cd
 
+kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=$(gcloud config get-value account)
+
+
