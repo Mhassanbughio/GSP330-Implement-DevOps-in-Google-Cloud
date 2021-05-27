@@ -34,4 +34,7 @@ kubectl get service gceme-frontend -n production
 Branch Sources: Git
 Project Repository: https://source.developers.google.com/p/[PROJECT_ID]/r/sample-app
 
+Credentials: qwiklabs service account
+click Periodically if not...... 1 min
+
 
