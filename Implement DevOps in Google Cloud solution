@@ -25,3 +25,4 @@ printf $(kubectl get secret cd-jenkins -o jsonpath="{.data.jenkins-admin-passwor
 cd sample-app
 kubectl create ns production
 kubectl apply -f k8s/production -n production
+kubectl apply -f k8s/canary -n production
