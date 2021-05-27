@@ -22,3 +22,4 @@ export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/com
 kubectl port-forward $POD_NAME 8080:8080 >> /dev/null &
 printf $(kubectl get secret cd-jenkins -o jsonpath="{.data.jenkins-admin-password}" | base64 --decode);echo
 
+cd sample-app
