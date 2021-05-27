@@ -1,1 +1,4 @@
 gcloud config set compute/zone us-east1-b
+
+git clone https://source.developers.google.com/p/$DEVSHELL_PROJECT_ID/r/sample-app
+
