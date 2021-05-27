@@ -26,3 +26,5 @@ cd sample-app
 kubectl create ns production
 kubectl apply -f k8s/production -n production
 kubectl apply -f k8s/canary -n production
+kubectl apply -f k8s/services -n production
+
