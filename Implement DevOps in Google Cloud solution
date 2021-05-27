@@ -39,3 +39,6 @@ click Periodically if not...... 1 min
 
 
 git init
+git config credential.helper gcloud.sh
+
+
